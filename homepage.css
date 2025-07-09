@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
 html, body {
   margin: 0;
@@ -34,30 +35,24 @@ html, body {
 }
 
 #informationText {
-    font-family: "Noto Sans", sans-serif;
     font-optical-sizing: auto;
-    color: white;
     font-style: normal;
     font-variation-settings:
         "wdth" 100;
-    font-size: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ffcc;
+    background-color: black;
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+    line-height: 1.5;
 
-p {
-  font-family: 'Courier New', Courier, monospace;
-  color: #00ffcc;
-  background-color: black;
-  font-size: 3rem;
-  letter-spacing: 0.1em;
-  text-shadow: 0 0 2px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
-  line-height: 1.5;
+    animation: flicker 1.5s infinite alternate;
 
-  animation: flicker 1.5s infinite alternate;
-
-  transform: scale(1.1) skew(-1deg);
+    transform: scale(1.1) skew(-1deg);
 }
 
 body::after {
@@ -94,7 +89,9 @@ body::after {
 }
 
 #homepage {
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: "Comic Neue", cursive;
+    font-weight: 800;
+    font-style: normal;
 }
 
 header {
@@ -139,8 +136,68 @@ header a {
 }
 
 #images {
-    padding: 210px 0;
+    padding: 200px 0;
     border: 3px solid green;
     display: flex;
     justify-content: center;
 }
+
+/*responsive css stile*/
+/*
+@media only screen and (max-width: 1660px) {
+        #wwwImage, #codingImage, #robloxImage {
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            transition: 500ms;
+        }
+
+        #wwwImage:hover {
+            transition: 500ms;
+            width: 220px;
+            cursor: pointer;
+        }
+
+        #codingImage:hover {
+            transition: 500ms;
+            width: 220px;
+            cursor: pointer;
+        }
+
+        #robloxImage:hover {
+            transition: 500ms;
+            width: 220px;
+            height: 200px;
+            cursor: pointer;
+        }
+}
+
+@media only screen and (max-width: 900px) {
+        #wwwImage, #codingImage, #robloxImage {
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            transition: 500ms;
+        }
+
+        #wwwImage:hover {
+            transition: 500ms;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        #codingImage:hover {
+            transition: 500ms;
+            width: 120px;
+            cursor: pointer;
+        }
+
+        #robloxImage:hover {
+            transition: 500ms;
+            width: 120px;
+            height: 100px;
+            cursor: pointer;
+        }
+}
+
+*/

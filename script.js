@@ -5,6 +5,8 @@ var codingImage = document.getElementById("codingImage");
 var codingImageText = document.getElementById("codingImageText");
 var robloxImage = document.getElementById("robloxImage");
 var robloxImageText = document.getElementById("robloxImageText");
+var startButton = document.getElementById("startButton");
+var elem = document.getElementById("appin")
 
 var images = document.getElementById("images");
 
@@ -12,7 +14,7 @@ function webOnload() {
     homepage.style.display = "none";
 }
 
-document.getElementById("startButton").addEventListener("click", function() {
+startButton.addEventListener("click", function() {
     this.remove();
     startIntro();
 });
@@ -153,6 +155,8 @@ function isMobile() {
 }
 
 if(isMobile() == true) {
+    alert("Attention: the website could be glitched when you're on a tablet or an phone. But I'm currently working on it.");
+
     wwwImage.style.width = "30vw";
     codingImage.style.width = "30vw";
     robloxImage.style.width = "30vw";
@@ -163,3 +167,6 @@ if(isMobile() == true) {
 }
 
 console.log(isMobile());
+
+
+//das hier ist wie im css nur für den test von always fullscreen at body onload
